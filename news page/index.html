@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>thingy</title>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body>
+
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html" style="margin-bottom: 0.1rem;">News</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showSci()">Sci</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showTech()">Tech</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#" onclick="showAbout()">About</a>
+          </li>
+      </ul>
+      <div class="container fluid">
+        <button type="button" class="btn btn-primary" id="setPageContent" onclick="getdatafromgorest()">Show API content</button>
+      </div>
+  </div>
+</div>
+</nav>
+
+<div class="content container pt-5">
+    <div id="home">
+        <div class="row">
+            <div class="col-md-6">
+                <h3>7th Pay Commission for lecturers to be implemented, says Punjab CM Bhagwant Mann</h3>
+                <h5>Chandigarh, September 5</h5>
+                <p>
+                    CM Bhagwant Mann on Monday announced that the 7th Pay Commission for lecturers would be implemented.
+                    Making this announcement on Teacher’s Day, the CM said guest faculty could be employed and they would also get enhanced pay.
+                    The new payscales will be implemented from October 1. It was a long-pending demand of teachers.
+                    The cabinet recommended regularisation of the employees having completed 10 years of service on contractual basis.
+                </p>
+            </div>
+            <div class="col-md-6 with-img">
+                <img class="float-right w-75" src="undraw_news_re_6uub.svg">    
+            </div>
+        </div>
+        <div>
+            <h3>Punjab CM announces closure of two toll plazas, says operators hike charges arbitrarily</h3>
+            <h5>Punjab CM announces closure of two toll plazas, says operators enhance charges "as per their whims and fancies," putting a huge burden on the pocket of people, reports PTI. </h5>
+            <p>
+                Addressing a gathering while announcing the closure of two toll plazas on the Sangrur-Ludhiana road, Punjab CM Bhagwant Mann emphasized that toll plaza charges burn a hole in people's pockets as their operators increase fees arbitrarily. He further staed that prices of common goods escalate as their transportation charges go up. Mann had raised the issue in Parliament but to no avail. Toll plaza operators enhance charges "as per their whims and fancies," thereby, putting a huge burden on the pocket of people, Punjab CM stated. Mann further said that he has rejected the demand for a 20-month extension by operators of the two plazas on the Sangrur-Ludhiana road.
+
+                The toll plazas are located in Ladda and Ahmedgarh areas. The operators of the toll plaza had requested the extension or a compensation of Rs 50 crore, citing losses due to the Covid-19 pandemic and the farmers' agitation against the now-repealed farm laws. Mann said the seven-year term of the toll plaza was going to end on Sunday midnight and reasoned that Covid-19 was a global disaster and everybody suffered because of it.
+
+                "We will not give any extension or compensation," he said. The chief minister also said the farmers' stir was the result of the wrong farm laws enacted by the Centre, for which the Union government had even sought an "apology." Mann hit out at the previous Akali Dal government for allowing the setting up of the two toll plazas after the Dhuri byelections in 2015.
+            </p>        
+        </div>
+        <div>
+            <h3>More than 5500 candidates take NDA exam in Punjab</h3>
+            <h5>Out of the total 5,696 candidates, only 1,738 were females; while in the CDS exam, 512 men appeared against 1,250 women</h5>
+            <p>
+                LUDHIANA: A total of 5,696 candidates appeared in the National Defence Academy (NDA) examination conducted in 14 centres in various schools and colleges in Ludhiana on Sunday. Only 1,738 females took the exam, as opposed to 3,958 males.
+
+                After the Supreme Court’s landmark judgement on August 18, 2021, which opened the doors of NDA for women cadets, the females outnumbered men in the exam held in November last year.
+
+                Out of a total of 6,355, who took the exam in November last year, 5,208 were women, and 1,147 were men. The position reversed in April this year, wherein out of the total 8,535 candidates who took the exam, 5,905 were men, while 2,630 were women.
+
+                In Sunday’s exam, a total of 3958 male candidates took the offline exam in two shifts (mathematics 10 am - 12:30 pm and general ability test from 2 pm -4:30 pm), while a total of 4552 students gave the exam a miss.
+
+                Aditya Dachalwal, the joint commissioner of the municipal corporation, said that Ludhiana was the only district for the exam in Punjab and candidates from distant districts of Punjab and a few from other neighbouring states appeared in the exam.
+            </p>
+        </div>
+    </div>
+    <div id="sci" style="display: none;">
+        <div>
+            <h3>Here’s the James Webb telescope’s first direct image of an exoplanet</h3>
+            <h5>JWST also got its first direct spectrum of an object orbiting a star in another solar system</h5>
+            <p>This is the first picture of an exoplanet from the James Webb Space Telescope.
+
+                “We’re actually measuring photons from the atmosphere of the planet itself,” says astronomer Sasha Hinkley of the University of Exeter in England. Seeing those particles of light, “to me, that’s very exciting.”
+
+                The planet is about seven times the mass of Jupiter and lies more than 100 times farther from its star than Earth sits from the sun, direct observations of exoplanet HIP 65426 b show. It’s also young, about 10 million or 20 million years old, compared with the more than 4-billion-year-old Earth, Hinkley and colleagues report in a study submitted August 31 at arXiv.org.
+            </p>
+        </div>
+        <div>
+            <h3>In 2021, a deadly volcano erupted with no warning. Here’s why</h3>
+            <h5>New data suggest a region in Congo came close to an even deadlier catastrophe</h5>
+            <p>
+                In May 2021, Congo’s Mount Nyiragongo, one of the world’s most dangerous volcanoes, burst to life without warning. Lava erupted from fissures and flowed down the mountain toward cities below, leaving hundreds dead or missing and hundreds more injured.
+                Now, using data from monitoring stations installed near the volcano in 2015, researchers have pieced together how that eruption happened so suddenly. The data also suggest that the event could have been even deadlier — and highlight the urgent need to better understand this volcano’s particular hazards before the next eruption, volcanologist Delphine Smittarello and colleagues report in the Sept. 1 Nature.
+            </p>
+        </div>
+        <div>
+            <h3>Isro successfully tests IAD technology to land missions on Mars, Venus</h3>
+            <h5>ISro successfully tested the Inflatable Aerodynamic Decelerator for landing payloads on to Mars or Venus, and for recovery of spent stages of the rocket.</h5>
+            <p>The Indian Space Research Organisation (Isro) has successfully tested the Inflatable Aerodynamic Decelerator (IAD) that will be used for landing payloads on Mars or Venus in the future. The IAD is being developed for aerodynamically decelerating an object descending through the atmosphere.
+            The technology was folded and kept inside the payload bay of a sounding rocket that was launched from TERLS Thumba. The rocket took the IAD to an altitude of 84 kilometers where it was inflated and descended through the atmosphere with the payload part of the sounding rocket.</p>
+        </div>
+    </div>
+    <div id="tech" style="display: none;">
+        <div>
+            <h3>Apple iPhone 14 series launch on September 7: Bigger camera to Always-On Display, everything that is expected</h3>
+            <h5>Apple iPhone 14 Launch, iPhone 14 Pro Series: A bigger 48MP camera, Always On Display, a redesigned notch and an new iPhone 14 Plus is expected at the event.</h5>
+            <p>Apple’s ‘Far Out’ event is just two days (September 7) and all eyes are on the next-generation iPhone 14 series. This time around the iPhone 14 series is expected to bring more changes compared to say iPhone 13– which was seen as more of an incremental update over the earlier 12 series. Let’s take a quick look at some of the changes expected on the iPhone 14 series this time.
+
+                <h4>Apple iPhone 14 full series: Four phones, but no mini</h4>
+                The iPhone 14 mini is unlikely to make an appearance as has been reported and noted countless times. Apple is instead focusing on the iPhone 14 which will be a 6.1-inch device and a new iPhone 14 Plus which will be 6.7-inches. The iPhone 14 Plus was earlier reported as being named the iPhone 14 Max, but it looks like Apple is reserving the Max nomenclature for the Pro series. The iPhone 14 Pro and iPhone 14 Pro Max will continue with the 6.1-inch and 6.7-inch ProMotion (120Hz) displays as well.
+
+                <h4>Apple iPhone 14 series: A16 only for the Pro</h4>
+                Several reports have indicated that the iPhone 14 series will mark one big change. The processor will be different from the regular vs the Pro variants. Apple is expected to limit the new A16 Bionic to the Pro phones; the iPhone 14 and iPhone 14 Plus will continue with the A15 Bionic, though it could be clocked higher. We will have to see how Apple claims a performance upgrade on the new iPhone 14 phones.
+            </p>
+        </div>
+        <div>
+            <h3>Netflix to Ban Crypto-Related Commercials on Ad-Supported Subscription: Report</h3>
+            <h5>Regulatory uncertainty that has been shadowing the crypto sector is among the main reason why Netflix does not wish to show related ads.</h5>
+            <p>
+                Netflix, which is all set to revamp its subscription plans this November, is hesitant towards allowing crypto-related advertisements to be telecasted on its platform. While the streaming giant is yet to reveal official details about its decision, sources familiar with the matter have shared the information with the media. The main reason why Netflix does not wish to expose its over 200 million global users is the regulatory uncertainty that has been shadowing the-fintech industry around the world.
+                The advertisements that will be shown on Netflix are being planned to be un-skippable. Hence, viewers will find themselves exposed to the crypto sector, as well as the financial risks associated to it, The Sydney Morning Herald said in its report.
+                Along with the crypto sector, Netflix may also deny to allow ads related to politics and gambling apps to feature on the platform.
+            </p>
+        </div>
+        <div>
+            <h3>Realme Watch 3 Pro With Bluetooth Calling, Realme Buds Air 3S TWS Earphones With Titanium Drivers Launched in India</h3>
+            <h5>Realme Watch 3 Pro price in India is set at Rs. 4,999, while the Realme Buds Air 3S TWS earphones are priced at Rs. 2,499.</h5>
+            <p>
+                Realme Watch 3 Pro and Realme Buds Air 3S true wireless stereo (TWS) earphones were launched in India on Tuesday expanding the company's its AIoT products portfolio. Realme says that the newly launched devices are a part of the company's TechLife ecosystem. The smartwatch sports a 1.78-inch AMOLED display, multi-system standalone GPS, and Bluetooth calling with AI environment noise reduction algorithm. Meanwhile, the Realme Buds Air 3S pack 11mm Liquid Silicone Triple Titanium bass drivers which are claimed to offer high quality stereo surround sound.
+            </p>
+            <h5>Realme Watch 3 Pro and Realme Buds Air 3S price, availability</h5>
+            <p>
+                The newly launched Realme Watch 3 Pro price in India is set at Rs. 4,999. It will be available for purchase from September 9 starting 12pm (noon) via Realme.com, Flipkart, and mainline channels. The Realme watch is launched in two colours: Black and Grey.
+                Meanwhile, the Realme Buds Air 3S TWS earphones price in India is set at Rs. 2,499 and they will go on sale on September 14 starting 12pm (noon) via Realme.com, Amazon, and mainline channels. The earphones come in Bass Black and Bass White colour options.
+            </p>
+        </div>
+    </div>
+    <div id="about" style="display: none;">
+        <div class="row">
+            <div class="col-md-6">
+                <h4>We are here for you</h4>
+                <p>
+                    The most important thing in life is the importance of football. It was a weekend. But the laoreet, the hatred of non-members of the gate, the pain of the throat, the laughter, the easy time of laughter, just let it be eros. The most important thing is the importance of the asset. Until it is easy to decorate the diam with pure poison. Suspendisse egestas, lacus vel dignissim placerat, mauris tellus hendrerit turpis, quis rutrum elit just nec nibh. My children's urn, the makeup of the lion of life, the ferryman needs to be pure. As expected, the patient now needs the sauce, the poison of the hospital. Now he flatters and flatters. In the land, laughter places the element to be drunk, for the land is not sad, not the valley from the tortor of life. Curabitur egestas hendrerit needs some arc.
+                </p>
+            </div>
+            <div class="col-md-6 with-img pt-3">
+                <img class="float-right w-50" src="undraw_about_us_page_re_2jfm.svg">
+            </div>
+        </div>
+    </div>
+</div>
+<div id="apiContent">
+    
+</div>
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+<!--jQuery Bundle -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<script>
+    let dataFromServer;
+    function localdatafromserver() {
+        const urltouse = "http://127.0.0.1:5000";
+        $.ajax({
+            url: urltouse,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {},
+            type: 'GET',
+            success: function(result){
+                dataFromServer = result;
+                setPageContnet(dataFromServer);
+                console.log("Success");
+            },
+            error: function(result) {
+                console.log(result);
+                console.log("Error");
+            }
+        });
+    }
+
+    function setPageContnet(content) {
+        $('body').append("<h1>" + content + "</h1>");
+    }
+
+    $("#setPageContent").on("click", function() {
+        $(this).prop("disabled", true);
+    });
+
+    let gorestdata;
+    function getdatafromgorest() {
+        const url1touse = "https://gorest.co.in/public/v2/comments";
+        $.ajax({
+            url: url1touse,
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            data: {},
+            type: 'GET',
+            success: function(result){
+                gorestdata = result;
+                setPageHeading(gorestdata);
+                console.log("Success");
+            },
+            error: function(result) {
+                console.log(result);
+                console.log("Error");
+            }
+        });
+    }
+
+    function setPageHeading(content) {
+        $('.content').append("<br><h4>" + "Comments here from third party API" + "</h4>");
+        for (let a of content) {
+            $('.content').append("<p>" + a.body + "</p>");
+        }
+    }
+
+    function showSci() {
+        document.getElementById("home").style.display='none';
+        document.getElementById("sci").style.display="block";
+        document.getElementById("tech").style.display="none";
+        document.getElementById("about").style.display="none";    
+    }
+    function showTech(){
+        document.getElementById("home").style.display="none";
+        document.getElementById("sci").style.display="none";
+        document.getElementById("tech").style.display="block";
+        document.getElementById("about").style.display="none";
+    }
+    function showAbout(){
+        document.getElementById("home").style.display="none";
+        document.getElementById("sci").style.display="none";
+        document.getElementById("tech").style.display="none";
+        document.getElementById("about").style.display="block";
+    }
+</script>
+</body>
+</html>
